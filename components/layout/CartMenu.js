@@ -85,7 +85,7 @@ const CartMenu = () => {
                   <Box flex="1 1 40%">
                     <img
                       alt={item.attributes.name}
-                      src={`http://localhost:1337${item.attributes.image.data.attributes.formats.medium.url}`}
+                      src={`https://strapi-ygb4.onrender.com${item.attributes.image.data.attributes.formats.medium.url}`}
                       width={190}
                       height={190}
                     />
