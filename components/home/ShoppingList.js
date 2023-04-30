@@ -19,7 +19,7 @@ const ShoppingList = () => {
   const getAllItems = async () => {
     try {
       const res = await fetch(
-        "http://localhost:1337/api/items?populate=image",
+        "https://strapi-ygb4.onrender.com/api/items?populate=image",
         { method: "GET" }
       );
       const data = await res.json();

@@ -25,7 +25,7 @@ const ItemPage = () => {
     // how to get the id?
     // we can use useRouter from next/router
     const res = await fetch(
-      `http://localhost:1337/api/items/${itemId}?populate=image`,
+      `https://strapi-ygb4.onrender.com/api/items/${itemId}?populate=image`,
       { method: "GET" }
     );
     const data = await res.json();
@@ -35,7 +35,7 @@ const ItemPage = () => {
 
   // get all items in order to display related products
   const getAllItems = async () => {
-    const res = await fetch("http://localhost:1337/api/items?populate=image");
+    const res = await fetch("https://strapi-ygb4.onrender.com/api/items?populate=image");
     const data = await res.json();
     console.log(data);
     setItems(data.data);
@@ -62,7 +62,7 @@ const ItemPage = () => {
         {/* Left: Item Image */}
         <Box flex="1 1 30%" marginBottom="40px">
           <img
-            src={`http://localhost:1337${item?.attributes?.image?.data?.attributes?.formats?.medium?.url}`}
+            src={`https://strapi-ygb4.onrender.com${item?.attributes?.image?.data?.attributes?.formats?.medium?.url}`}
             alt={item?.attributes?.name}
             width={480}
             height={480}

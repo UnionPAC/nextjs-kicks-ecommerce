@@ -23,7 +23,7 @@ const Item = ({ item, width, height }) => {
       >
         <Link href={`/item/${item.id}`}>
           <img
-            src={`http://localhost:1337${url}`}
+            src={`https://strapi-ygb4.onrender.com${url}`}
             alt={name}
             width={width}
             height={height}
