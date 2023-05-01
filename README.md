@@ -19,3 +19,4 @@ E-commerce is at the heart of the web, and so I think it is super important to h
 **Backend:**
 
 - Strapi
+Find the Repo for the Strapi backend code [here](https://github.com/UnionPAC/kicks-strapi)
