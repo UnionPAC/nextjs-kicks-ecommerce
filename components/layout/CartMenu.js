@@ -82,12 +82,12 @@ const CartMenu = () => {
               // example key: name-id
               <Box key={`${item.attributes.name}-${item.id}`}>
                 <FlexBox p="15px 0">
-                  <Box flex="1 1 40%">
+                  <Box flex="1 1 30%" paddingRight="10px">
                     <img
                       alt={item.attributes.name}
                       src={`https://strapi-ygb4.onrender.com${item.attributes.image.data.attributes.formats.medium.url}`}
-                      width={190}
-                      height={190}
+                      width={150}
+                      height={150}
                     />
                   </Box>
                   <Box flex="1 1 60%">
